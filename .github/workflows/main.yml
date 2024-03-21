@@ -16,7 +16,7 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: docker build -t yourusername/yourimage:latest .
+        run: docker build -t vd9999/student-project1:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push yourusername/yourimage:latest
+        run: docker push vd9999/student-project1:latest
